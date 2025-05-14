@@ -1,0 +1,7 @@
+Block-level Elements
+
+<p> and <div> and all the semantic containers like <heather>, <footer>, <main>, <nav>, and <section>
+
+Inline Elements
+
+<span>, <a>, <img>, <button>, <input>, <label>, <cite>
