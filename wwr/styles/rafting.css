@@ -20,7 +20,7 @@ body {
 
 header, main, footer {
     width: 840px;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 h1, h2 {
@@ -49,7 +49,7 @@ nav, p, section, article {
 
 h1 {
     position: absolute;
-    top: 20px;
+    top: 0px;
     width: 100%;
     padding: 5px;
     text-align: center;
@@ -64,7 +64,6 @@ h1 {
     width: 50rem;
     padding: 5px;
     text-align: center;
-    /* opacity: 0.8; */
     background-color: var(--accent1-color);
     color: #000;
 }
@@ -77,12 +76,106 @@ h1 {
 }
 
 footer img {
-    height: 50px;
+    height: 30px;
     width: auto;
+    padding: 2px;
+}
+
+/* CSS GRID AND FLEX - HEADER */
+
+header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 100px 1fr 1fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 840px;
+}
+
+.navigation {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;     
+}
+
+.navigation li {
+	flex: 1 1 auto;
+}
+
+.navigation a {
+	display: block;
+	color: var(--primary-color);
+	padding: 1px;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.navigation a:hover {
+	color: var(--accent2-color);
+	font-weight: 700;
 }
 
 
+/* CSS GRID AND FLEX - ADVENTURE */
 
+.rafting_examples{
+    padding: 0;
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+}
 
+.adventure {
+	grid-column: 1/6;
+	place-items: center;
+    padding: 10px;
+}
 
+figure {
+  display: flex;
+  flex-flow: column;
+  padding: 1px;
+  max-width: 220px;
+  margin: auto;
+}
 
+figure img {
+  max-width: 150px;
+} 
+
+figcaption {
+  background-color: #222;
+  color: var(--accent1-color);
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+/* CSS GRID AND FLEX - FOOTER */
+
+.footer{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+      place-items: center;
+    border-top: 1px solid #ccc;
+}
+
+/* CSS GRID AND FLEX - HISTORY */
+
+.histoty_grid {
+    padding: 0;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+    color: #000;
+}
+
+.history_tittle {
+	grid-column: 1/4;
+	place-items: center;
+    padding: 10px;
+}
+
+.histoty_grid img {
+  max-width: 220px;
+  margin: auto;
+}
