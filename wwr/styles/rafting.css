@@ -156,8 +156,9 @@ figcaption {
 .footer{
     display: grid;
     grid-template-columns: 4fr 1fr;
-      place-items: center;
+    place-items: center;
     border-top: 1px solid #ccc;
+    color:#000;
 }
 
 /* CSS GRID AND FLEX - HISTORY */
